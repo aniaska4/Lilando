@@ -24,6 +24,35 @@
     }
 }
 
+@mixin mainPrice{
+    background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            height: 20vw;
+            width: 100%;
+}
+
+@mixin mainPrice_p{
+    color: beige;
+    height: 120px;
+    font-size: 60px;
+    width: 100%;
+    padding-top: 30px;
+    font-weight: 700;
+    text-shadow: -1px 0 black, 0 1px black,
+        1px 0 black, 0 -1px black;
+        &:hover {
+            color: #915373;
+            background-color: rgba(255, 255, 255, 0.4);
+            width: 100%;
+            padding-top: 30px;
+            font-weight: 700;
+        }
+
+}
+
 $navColor: rgb(235, 177, 235);
 $navColor2: rgba(9, 1, 24, 0.61);
 $base-color: #915373;
@@ -410,34 +439,12 @@ body {
         }
 
         .price_hand {
-            height: 20vw;
-            width: 100%;
             background: url('../img/nails3.jpg');
             background-position: (10%, 90%);
-            background-size: cover;
-            background-repeat: no-repeat;
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-
+            @include mainPrice;
             p {
-                color: beige;
-                height: 120px;
-                font-size: 60px;
-                width: 100%;
-                padding-top: 30px;
-                font-weight: 700;
-                text-shadow: -1px 0 black, 0 1px black,
-                    1px 0 black, 0 -1px black;
-
-                &:hover {
-                    color: #915373;
-                    background-color: rgba(255, 255, 255, 0.4);
-                    width: 100%;
-                    padding-top: 30px;
-                    font-weight: 700;
-                }
-
+                @include mainPrice_p;
+                
                 @media only screen and (min-width: 600px) and (max-width: 1023px) {
                     font-size: 3em;
                     margin-left: 20px;
@@ -451,34 +458,12 @@ body {
         }
 
         .price_feet {
-            height: 20vw;
-            width: 100%;
             background: url('../img/feet.jpg');
             background-position: (10%, 90%);
-            background-size: cover;
-            background-repeat: no-repeat;
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-
-            p {
-                color: beige;
-                height: 120px;
-                font-size: 60px;
-                width: 100%;
-                padding-top: 30px;
-                font-weight: 700;
-                text-shadow: -1px 0 black, 0 1px black,
-                    1px 0 black, 0 -1px black;
-
-                &:hover {
-                    color: #915373;
-                    background-color: rgba(255, 255, 255, 0.4);
-                    width: 100%;
-                    padding-top: 30px;
-                    font-weight: 700;
-                }
-
+            @include mainPrice;
+            
+            p {                
+                @include mainPrice_p;
                 @media only screen and (min-width: 600px) and (max-width: 1023px) {
                     font-size: 3em;
                     margin-left: 20px;
@@ -538,34 +523,12 @@ body {
         }
 
         .price_cosmetics {
-            height: 20vw;
-            width: 100%;
             background: url('../img/nails2.jpg');
             background-position: (10%, 90%);
-            background-size: cover;
-            background-repeat: no-repeat;
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-
+            @include mainPrice;
+           
             p {
-                color: beige;
-                height: 120px;
-                font-size: 60px;
-                width: 100%;
-                padding-top: 30px;
-                font-weight: 700;
-                text-shadow: -1px 0 black, 0 1px black,
-                    1px 0 black, 0 -1px black;
-
-                &:hover {
-                    color: #915373;
-                    background-color: rgba(255, 255, 255, 0.4);
-                    width: 100%;
-                    padding-top: 30px;
-                    font-weight: 700;
-                }
-
+                @include mainPrice_p;
                 @media only screen and (min-width: 600px) and (max-width: 1023px) {
                     font-size: 3em;
                     margin-left: 20px;
