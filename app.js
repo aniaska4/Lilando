@@ -57,7 +57,6 @@ document.addEventListener('DOMContentLoaded', function () {
             priceAll(priceCosmetics, detailsCosmetics);
 
 
-
             //up button
             let interval = 0;
             const scroll_btn = document.querySelector('.scroll-top');
@@ -66,8 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 if(window.pageYOffset === 0){
                     clearInterval(interval)
                 }
-                    window.scrollTo(0, window.pageYOffset - 100);
-                
+                    window.scrollTo(0, window.pageYOffset - 100);                
             }
 
             function scrollTop(){
